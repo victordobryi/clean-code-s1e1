@@ -1,4 +1,7 @@
 /* Basic Style */
+* {
+  background-color: #f8f8f8;
+}
 
 .page {
   background-color: #f8f8f8;
