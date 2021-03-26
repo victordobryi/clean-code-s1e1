@@ -13,68 +13,68 @@
   </head>
   <body>
     <main class="page">
-      <header class="eisenhower-matrix">
+      <header class="page__header">
         <img class="page__img" 
             src="./eisenhower-matrix.jpg"  
             alt="eisenhower-matrix"
         />
-        <a class="more-info"
+        <a class="page__link"
             href="https://goal-life.com/page/method/matrix-eisenhower">
             Want more details?
         </a>
       </header>
-      <article class="toDo-list">
-        <section id="top-section">
-          <label class="toDo-list__label" for="new-task">
+      <article class="page__toDo-list">
+        <section class="page__section">
+          <label class="page__label" for="new-task">
               Add Item
           </label>
           <div class="task-row-wrapper">
             <input
               id="new-task"
-              class="task-name task-name-text"
+              class="task-row-wrapper__text tasks-block__name"
               type="text "/>
             <button class="task-row-wrapper__button">
               Add
             </button>
           </div>
         </section>
-        <section>
-          <h3>Todo</h3>
+        <section class="page__section">
+          <h3 class="page__title">Todo</h3>
           <ul class="tasks-block" 
               id="incompleted-tasks">
             <li class="tasks-block__item">
-              <input class="input__checkbox" type="checkbox"/>
-              <label class="task-name">Pay Bills</label>
+              <input class="tasks-block__checkbox" type="checkbox"/>
+              <label class="tasks-block__name">Pay Bills</label>
               <input type="text" 
-                  class="task-name task-name-text" />
-              <button class="edit-task">Edit</button>
-              <button class="delete-task">
+                  class="tasks-block__name task-row-wrapper__text" />
+              <button class="tasks-block__edit-task">Edit</button>
+              <button class="tasks-block__delete-task">
                 <img class="delete-task__img" src="./remove.svg" />
               </button>
             </li>
             <li class="tasks-block__item edit-mode">
-              <input class="input__checkbox" type="checkbox" />
-              <label class="task-name">Go Shopping</label>
+              <input class="tasks-block__checkbox" type="checkbox" />
+              <label class="tasks-block__name">Go Shopping</label>
               <input
                 type="text"
                 value="Go Shopping"
-                class="task-name task-name-text"/>
-              <button class="edit-task">Save</button>
-              <button class="delete-task">
+                class="tasks-block__name task-row-wrapper__text"/>
+              <button class="tasks-block__edit-task">Save</button>
+              <button class="tasks-block__delete-task">
                 <img class="delete-task__img" src="./remove.svg" />
               </button>
             </li>
           </ul>
         </section>
-        <section>
-          <h3>Completed</h3>
-          <ul id="completed-tasks">
+        <section class="page__section">
+          <h3 class="page__title">Completed</h3>
+          <ul class="tasks-block" id="completed-tasks">
             <li class="tasks-block__item">
-              <input class="input__checkbox" type="checkbox" checked />
-              <label class="task-name">See the Doctor</label>
-              <input type="text" class="task-name task-name-text" />
-              <button class="edit-task">Edit</button>
-              <button class="delete-task">
+              <input class="tasks-block__checkbox" type="checkbox" checked />
+              <label class="tasks-block__name">See the Doctor</label>
+              <input type="text" class="tasks-block__name task-row-wrapper__text" />
+              <button class="tasks-block__edit-task">Edit</button>
+              <button class="tasks-block__delete-task">
                 <img class="delete-task__img" src="./remove.svg" />
               </button>
             </li>
