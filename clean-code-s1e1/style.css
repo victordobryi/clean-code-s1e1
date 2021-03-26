@@ -1,8 +1,12 @@
 /* Basic Style */
-body {
+
+
+.page {
     background-color: #f8f8f8;
     color: #333;
     font-family: Lato, sans-serif;
+    margin: -8px;
+    padding: 8px;
 }
 .eisenhower-matrix {
     width: 500px;
@@ -10,7 +14,7 @@ body {
     display: block;
     text-align: right;
 }
-.eisenhower-matrix img {
+.page__img {
     width: 100%;
 }
 .eisenhower-matrix .more-info {
@@ -58,7 +62,7 @@ button:hover {
 }
 /* Heading */
 h3,
-label[for="new-task"] {
+.toDo-list__label {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -67,7 +71,7 @@ label[for="new-task"] {
     margin: 0;
     text-transform: uppercase;
 }
-input[type="text"] {
+.task-name-text {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -79,19 +83,19 @@ input[type="text"] {
     font-family: Lato, sans-serif;
     color: #888;
 }
-input[type="text"]:focus {
+.task-name-text:focus {
     color: #333;
 }
 
 /* New Task */
-label[for="new-task"] {
+.toDo-list__label  {
     display: block;
     margin: 0 0 20px;
 }
-input#new-task {
+#new-task {
     width: 318px;
 }
-p > button:hover {
+.task-row-wrapper__button:hover {
     color: #0FC57C;
 }
 
@@ -109,46 +113,47 @@ li > * {
     vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.input__checkbox {
     margin: 0 10px;
 }
-li > label {
+.tasks-block__item label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
-li >    input[type="text"] {
+.tasks-block__item .task-name-text{
     width: 226px
 }
-li > button.delete-task:hover {
+
+.tasks-block__item .delete-task:hover {
     color: #CF2323;
 }
-button.delete-task img {
+.delete-task__img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-button.delete-task img:hover {
+.delete-task__img:hover {
     transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+#completed-tasks label {
     text-decoration: line-through
     color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.tasks-block__item .task-name-text {
     display:none
 }
 
-ul li.edit-mode input[type=text] {
+.edit-mode .task-name-text {
     display:inline-block;
     width:224px
 }
 
-ul li.edit-mode label {
+.edit-mode label {
     display:none;
 }
